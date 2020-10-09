@@ -16,7 +16,9 @@ function shouldContinue() {
   // 1st check: Any pending 'setTimeout', 'setInterval', 'setImmediate'?
   // 2nd check: Any pending OS tasks? (Like server listening to port)
   // 3rd check: Any pending long running operations? (fs module)
-  return pendingTimers.length || pendingOSTasks.length || pendingOperations;
+  return (
+    pendingTimers.length || pendingOSTasks.length || pendingOperations.length
+  );
 }
 
 // enter event loop
