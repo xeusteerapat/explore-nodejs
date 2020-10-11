@@ -1,4 +1,4 @@
-// process.env.UV_THREADPOOL_SIZE = 1;
+process.env.UV_THREADPOOL_SIZE = 1;
 const { pbkdf2 } = require('crypto');
 
 const start = Date.now();

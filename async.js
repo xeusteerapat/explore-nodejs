@@ -1,6 +1,6 @@
-const https = require('https')
+const https = require('https');
 
-const start = Date.now()
+const start = Date.now();
 
 function doRequest() {
   https
@@ -13,9 +13,9 @@ function doRequest() {
     .end();
 }
 
-doRequest()
-doRequest()
-doRequest()
-doRequest()
-doRequest()
-doRequest()
+doRequest();
+doRequest();
+doRequest();
+doRequest();
+doRequest();
+doRequest();
